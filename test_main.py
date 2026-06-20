@@ -33,3 +33,4 @@ def test_get_tasks_grows():
 def test_create_task_empty_title_fails():
     response = client.post("/tasks", json={"title": "   "})
     assert response.status_code == 400
+    
